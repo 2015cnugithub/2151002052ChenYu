@@ -1,0 +1,5 @@
+bool operator< (const CGoods &c);//重载运算符
+形参给的是对象的引用，调用重载函数不会执行析构函数
+
+bool operator>= (const CGoods c);//重载运算符
+形参给的是对象，调用重载函数先执行构造函数，重载函数结束时形参释放，所以会执行析构函数
